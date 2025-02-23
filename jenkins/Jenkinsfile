@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'echo "Just saying hello from GITHUB'
+                sh 'echo "Just saying hello from GITHUB"'
             }
         }
         stage('Test') {
@@ -12,13 +12,13 @@ pipeline {
             }
             post {
                 always {
-                    sh 'Just another bs print line'
+                    sh 'echo "Just another bs print line."'
                 }
             }
         }
         stage('Deliver') {
             steps {
-                sh 'Just a hello from the Deliver stage'
+                sh 'echo "Just a hello from the Deliver stage."'
             }
         }
     }
