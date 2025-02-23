@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                sh 'echo "Just a hello from the Deliver stage."'
+                sh 'echo "Just a hello from the Deliver stage from the branch created from master."'
             }
         }
     }
