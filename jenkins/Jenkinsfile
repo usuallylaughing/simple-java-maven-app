@@ -1,9 +1,9 @@
-pipeline {
+ho pipeline {
     agent any
     stages {
         stage('Build') {
             steps {
-                sh 'mvn -B -DskipTests clean package'
+                sh 'echo "Just saying hello from GITHUB'
             }
         }
         stage('Test') {
